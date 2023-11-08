@@ -1,230 +1,338 @@
-// // ejercicios 1,2,3,4
-// let num1, num2, num3;
-//         num1 = parseInt(prompt('Ingrese el primer número:'));
-//         num2 = parseInt(prompt('Ingrese el segundo número:'));
-//         num3 = parseInt(prompt('Ingrese el tercer número:'));
-//         if (num1 > num2) {
-//             document.write('el primer numero es mayor:' + num1);
-//             document.write('<br>')
-//             document.write('El mayor es:' + num1);
-//             document.write('<br>')
-//         }
-//         else if (num1 == num2){
-//             document.write("son iguales")
-//             document.write('<br>')
-//         }
-//          else{
-//             document.write('el segundo numero es mayor:' + num2);
-//             document.write('<br>')
-//             document.write('El mayor es: ' + num2);
-//             document.write('<br>');}
-        
-//         if (num1 == num2) {
-//             document.write("son iguales")
-//             document.write('<br>')
+// ejercicio 1,// ejercicio 2,// ejercicio 3, // ejercicio 4
+
+// let num1 = prompt("ingrese numero")
+// let num2 = prompt("ingrese numero")
+// let num3 = prompt("ingrese numero")
+// if (num1 > num2) {
+//     console.log("numero 1 mayor a numero 2")
+// } else {
+//     console.log("numero 1 menor a numero 2")
+// }
+
+// if (num1 == num2) {
+//     console.log("numeros iguales")
+// } else {
+//     console.log("numeros diferentes")
+// }
+
+// if (num1 > num2) {
+//     console.log("numero 1 es el mas grande")
+// } else if (num2 > num1) {
+//     console.log("numero 2 es el mas grande")
+// }
+// let milista = [num1, num2, num3]
+// function menor(lista) {
+//     let menor = lista[0];
+//     for (i = 1; i < lista.length; i++) {
+//         if (lista[i] < menor)
+//             menor = lista[i];
+//     }
+//     return menor
+// }
+// console.log("el numero menor es: " + menor(milista))
+
+// // ejercicio 5
+
+// confirm("bienvenido persona 1")
+// let persona1 = {
+//     nombre: prompt("ingrese su nombre"),
+//     edad: prompt("ingrese su edad"),
+//     altura: prompt("ingrese su altura"),
+//     vision: prompt("tipo de vision del 1 al 10"),
+//     pase: prompt("vip o normal"),
+
+
+// }
+// confirm("bienvenido persona 2")
+// let persona2 = {
+
+//     nombre: prompt("ingrese su nombre"),
+//     edad: prompt("ingrese su edad"),
+//     altura: prompt("ingrese su altura")
+
+
+// }
+// if (persona1.edad > persona2.edad) {
+
+//     console.log("persona 1 es mayor: " + persona1.nombre)
+// } else if (persona2.edad > persona1.edad) {
+
+//     console.log("persona 2 es mayor: " + persona2.nombre)
+// } else {
+//     console.log("son de la misma edad")
+// }
+
+// if (persona1.altura > persona2.altura) {
+
+//     console.log("persona 1 es más alto: " + persona1.nombre)
+
+
+// } else if (persona2.altura > persona1.altura) {
+
+//     console.log("persona 2 es más alto: " + persona2.nombre)
+
+// } else {
+//     console.log("son igual de altos")
+// }
+
+// // ejercicio 6
+
+// if (persona1.edad >= 18) {
+//     if (persona1.altura >= 150) {
+//         if (persona1.vision >= 8) {
+//             console.log("Estas capacitado para conducir ")
 //         } else {
-//             document.write("son diferentes")
-//             document.write('<br>')
+//             console.log("No estas capacitado para conducir")
 //         }
-//         if (num1<num2 && num1<num3){
-//             document.write("el numero uno es menor" + num1)
-//             document.write('<br>')
-//         } else if (num2<num1 && num2<num3){
-//             document.write("el numero dos es menor" + num2)
-//             document.write('<br>')
-//         } else if (num3<num1 && num3<num2){
-//             document.write("el numero tres es menor" + num3)
-//             document.write('<br>')
-//         } 
-// ejercicio 5
 
-let persona1 = {
-    nombre: "juan",
-    edad: 30,
-    altura: 160,
-}
+//     } else {
+//         console.log("No estas capacitado para conducir")
+//     }
 
-let persona2 = {
-    nombre: "raul",
-    edad: 25,
-    altura: 170,
-}
-edad = parseInt(prompt("ingrese la edad de raul")),
-altura = parseInt(prompt("ingrese la altura de raul"))
-
-if (persona1.edad>persona2.edad){
-    document.write(" juan es mayor ");
-} else if (persona1.edad<persona2.edad) {
-    document.write (" raul es mayor ")
-} else if (persona1.altura>persona2.altura){
-    document.write ("juan es mas alto")
-} else if (persona1.altura<persona2.altura) {
-    document.write ("raul es mas alto")
-}
-
-// NUMERO 8
-// Realizar un juego de adivinanza estableciendo un valor entre 1 y 10 en una variable 
-// llamada numeroIncognita y que permita en 3 intentos adivinar el numero. 
-// El usuario deberá ingresar un numero del 1 al 10 por pantalla en 3 intentos 
-// el cual se deberá guardar en una variable llamada numeroIngresado, 
-// y en cada intento deberás mostrarle un mensaje al usuario diciendo: 
-// “el numero ingresado es mayor, vuelve a intentarlo” o 
-// “el numero ingresado es menor, vuelve a intentarlo” o en caso de adivinar, 
-// un mensaje que diga: “Ganaste, haz adivinado el numero.” 
-// No te preocupes si usas mucho código repetido, 
-// mas adelante veraz como realizar este juego de manera mas eficiente.
-
-// let numeroIngresado = prompt("Ingrese un dígito del 1 al 10 para adivinar el número: ");
-// numeroIngresado = parseInt(numeroIngresado)
-// let numeroIncognita = 3;
-// if (numeroIngresado > 10 || numeroIngresado < 1) {
-//     console.log("Digíte un número del 1 al 10, gracias.");
-// } else if (numeroIngresado == numeroIncognita) {
-//     console.log("¡Has ganado! Has adivinado el número correctamente!");    
-// } else if (numeroIngresado > numeroIncognita) {
-//     console.log("El numero ingresado es mayor, vuelve a intentarlo");
-// } else if (numeroIngresado < numeroIncognita) {
-//     console.log("El numero ingresado es menor, vuelve a intentarlo");
-// } 
+// } else {
+//     console.log("No estas capacitado para conducir")
+// }
 
 
+// // ejercicio 7
 
-// NUMERO 9
-// Crear un programa que permita ingresar tu edad y decir si eres un infante (0 a 12 años), 
-// adolescente(13 a 18 años), un mayor joven (19 a 45 años) o un anciano (mas de 45 años), 
-// y en caso de ingresar una edad mayor a 100 mostrar un mensaje preguntando si en realidad tiene esa edad.
 
-// let edad = prompt("Que edad tienes?")
-// parseInt(edad);
-// switch (true) {
-//     case (edad >= 0 && edad <= 12):
-//         console.log("eres un infante")
-//         break;
-//     case (edad >= 13 && edad <= 18):
-//         console.log("eres un adolescente")
-//         break;
-//     case (edad >= 19 && edad <= 45):
-//         console.log("eres un mayor joven")
-//         break;
-//     case (edad >= 45 && edad <= 100):
-//         console.log("eres un anciano")
-//         break;
-//     default:
-//         let resp = prompt("¿en realidad tiene esa edad?")
-//         break;
+// if (persona1.nombre == "felipe" || persona1.pase == "vip") {
+//     confirm("Bienvenido")
+// } else {
+//     var confirmar = confirm("¿Tienes entrada?")
+//     if (confirmar) {
+//         let confirmar2 = confirm("¿deseas uzarla?")
+//         if (confirmar2) {
+//             confirm("Bienvenido")
+//         }
+//     } else {
+//         var confirmar3 = confirm("¿deseas comprar?")
+//     }
+//     if (confirmar3) {
+//         let saldo = prompt("Ingrese saldo disponible")
+//         if (saldo >= 1000) {
+//             confirm("compra exitosa de entrada ")
+//             confirm("Bienvenido")
+//         } else {
+//             confirm("compra fallida de entrada ")
+//         }
+//     } else {
+//         console.log("Hasta luego")
+//     }
 // }
 
 
 
-// NUMERO 10
-// Crear un programa que permita el ingreso de “PIEDRA”, “PAPEL” o “TIJERAS” 
-// a 2 jugadores y muestre en pantalla cual de los 2 ha ganado o si han empatado. 
-// En caso de algún ingreso incorrecto mostrar por pantalla que uno de los jugadores ha hecho trampa.
+// // ejercicio 8
 
-// Ya usted lo tiene
+// let Intento1 = prompt("Ingrese un dígito del 1 al 10 para adivinar el número: ")
+// let numeroAdivinanza = 3
+// if (Intento1 == numeroAdivinanza) {
+//     console.log("Ganaste, haz adivinado el numero.")
+// } else if (Intento1 > numeroAdivinanza) {
+//     confirm("El numero ingresado es mayor, vuelve a intentarlo")
+//     var intento2 = prompt("segundo intento: ")
+//     if (intento2 == numeroAdivinanza) {
+//         console.log("Ganaste, haz adivinado el numero.")
+//     } else if (intento2 > numeroAdivinanza) {
+//         confirm("El numero ingresado es mayor, vuelve a intentarlo")
+//         var intento3 = prompt("último intento")
+//         if (intento3 == numeroAdivinanza) {
+//             console.log("Ganaste, haz adivinado el numero.")
+//         }else {
+//             console.log("no adivinaste adivinanza")
+//         }
+//     } else if (intento2 < numeroAdivinanza) {
+//         confirm("El numero ingresado es menor, vuelve a intentarlo")
+//         var intento3 = prompt("último intento")
+//         if (intento3 == numeroAdivinanza) {
+//             console.log("Ganaste, haz adivinado el numero.")
+//         } else {
+//             console.log("no adivinaste adivinanza")
+//         }
+//     }
+// } else if (Intento1 < numeroAdivinanza) {
+//     confirm("El numero ingresado es menor, vuelve a intentarlo")
+//     var intento2 = prompt("segundo intento: ")
+//     if (intento2 == numeroAdivinanza) {
+//         console.log("Ganaste, haz adivinado el numero.")
+//     } else if (intento2 > numeroAdivinanza) {
+//         confirm("El numero ingresado es mayor, vuelve a intentarlo")
+//         var intento3 = prompt("último intento")
+//         if (intento3 == numeroAdivinanza) {
+//             console.log("Ganaste, haz adivinado el numero.")
+//         } else {
+//             console.log("no adivinaste adivinanza")
+//         }
+//     } else if (intento2 < numeroAdivinanza) {
+//         confirm("El numero ingresado es menor, vuelve a intentarlo")
+//         var intento3 = prompt("último intento")
+//         if (intento3 == numeroAdivinanza) {
+//             console.log("Ganaste, haz adivinado el numero.")
+//         } else {
+//             console.log("no adivinaste adivinanza")
+//         }
+// } 
+// }
 
+// // ejercicio 9
 
+// let edad = prompt("Que edad tienes?")
+ 
+//  switch (true) {
+//      case (edad >= 0 && edad <= 12):
+//          console.log("eres un infante")
+//          break;
+//      case (edad >= 13 && edad <= 18):
+//          console.log("eres un adolescente")
+//          break;
+//      case (edad >= 19 && edad <= 45):
+//          console.log("eres mayor joven")
+//          break;
+//      case (edad >= 45 && edad <= 100):
+//          console.log("eres un anciano")
+//          break;
+//      default:
+//          confirm("¿en realidad tiene esa edad?")
+//          if (confirm) {
+//             confirm("no eres mortal")
+//          }
+//          break;
+//  }
 
+// // ejercicio 10
 
+// confirm("Bienvenido Jugador 1")
+// let jugador1 = {
+    
+//     chimbupapas : prompt("Jugador 1 piedra, papel o tijera")
+// }
+// confirm("Bienvenido Jugador 2")
+// let jugador2 = {
+//     chimbupapas : prompt("Jugador 2 piedra, papel o tijera")
+// }
 
+// switch (true) {
+//     case (jugador1.chimbupapas == "papel" && jugador2.chimbupapas == "piedra"):
+//         confirm("jugador 1 ganador")
+//         break;
+//     case (jugador1.chimbupapas == "piedra" && jugador2.chimbupapas == "tijera"):
+//         confirm("jugador 1 ganador")
+//         break;
+//     case (jugador1.chimbupapas == "tijera" && jugador2.chimbupapas == "papel"):
+//         confirm("jugador 1 ganador")
+//         break;
+//     case (jugador2.chimbupapas == "papel" && jugador1.chimbupapas == "piedra"):
+//         confirm("jugador 2 ganador")
+//         break;
+//     case (jugador2.chimbupapas == "piedra" && jugador1.chimbupapas == "tijera"):
+//         confirm("jugador 2 ganador")
+//         break;
+//     case (jugador2.chimbupapas == "tijera" && jugador1.chimbupapas == "papel"):
+//         confirm("jugador 2 ganador")
+//         break;    
+//     case (jugador1.chimbupapas == "papel" && jugador2.chimbupapas == "papel"):
+//         confirm("jugadores empatados")
+//         break;    
+//     case (jugador1.chimbupapas == "piedra" && jugador2.chimbupapas == "piedra"):
+//         confirm("jugadores empatados")
+//         break;
+//     case (jugador1.chimbupapas == "tijera" && jugador2.chimbupapas == "tijera"):
+//         confirm("jugadores empatados")
+//         break;
+//     default:
+//         console.log("algun jugador hizo trampa")
+//         break;
+// }
 
-// NUMERO 11
-// Realizar un programa que permita el ingreso de un color y utilizando “switch” 
-// mostrar por pantalla los siguientes mensajes según las opciones: 
-// Blanco o Negro: Falta de color, 
-// Verde: El color de la naturaleza, 
-// Azul: El color del agua, 
-// Amarillo: El color del sol, 
-// Rojo: El color del fuego, 
-// Marrón: el color de la tierra, 
-// y para cualquier otro valor: Excelente elección, no lo teníamos pensado.
+// // ejercicio 11
 
 // let color = prompt("Ingresa un color");
 // switch (true) {
-//     case color === "Blanco" || color === "Negro" || color === "blanco" || color === "negro":
-//         console.log("Falta de color");
-//         break;
-//     case color === "Verde" || color === "verde":
-//         console.log("El color de la naturaleza");
-//         break;
-//     case color === "Azul" || color === "azul":
-//         console.log("El color del agua");
-//         break;
-//     case color === "Amarillo" || color === "amarillo":
-//         console.log("El color del sol");
-//         break;
-//     case color === "Rojo" || color === "rojo":
-//         console.log("El color del fuego");
-//         break;
-//     case color === "Marron" || color === "marron" || color === "Marrón":
-//         console.log("El color de la tierra");
-//         break;
+//     case(color == "blanco" || color == "negro" ):
+//         confirm("falta de color")
+//     break;
+
+//     case(color == "verde"):
+//         confirm("El color de la naturaleza")
+//     break;
+    
+//     case(color == "azul"):
+//         confirm("El color del agua")
+//     break;
+
+//     case(color == "amarillo"):
+//         confirm("El color del sol")
+//     break;
+
+//     case(color == "rojo"):
+//         confirm("El color del fuego")
+//     break;
+
+//     case(color == "marrón"):
+//         confirm("El color de la tierra")
+//     break;
+
 //     default:
-//         console.log("Excelente elección, no lo teníamos pensado.");
+//         confirm("Excelente elección, no lo teníamos pensado.")
 //         break;
 // }
 
+// // ejercicio 12
 
 
+// let numero1 = prompt("ingrese un numero")
+// let numero2 = prompt("ingrese un numero")
+// let operacion = prompt("ingrese tipo de operacion: suma, resta, multiplicar, dividir")
+
+// numero1 = parseInt(numero1)
+// numero2 = parseInt(numero2)
+// var suma = numero1 + numero2
+// let resta = numero1 - numero2 
+// let multi = numero1 * numero2 
+// let dividir = numero1 / numero2
 
 
-// NUMERO 12
-// Realizar un programa que permita el ingreso de 2 valores numéricos y una operación. 
-// Según sea la operación ingresada (suma, resta, multiplicación, división) 
-// el programa deberá mostrar en pantalla un mensaje junto con el resultado. 
-// En caso de haber elegido división realizar 
-// la operación siempre que sea posible o mostrar un mensaje de ERROR si el divisor ingresado fue 0.
-
-// let numero1 = prompt("Ingresa el primer dígito a operar:");
-// let numero2 = prompt("Ingresa el segundo dígito a operar:");
-// numero1 = parseInt(numero1);
-// numero2 = parseInt(numero2);
-// let operacion = prompt("¿Qué deseas hacer?, digíta el número de acuerdo a la operación que desseas,\nSuma (1)\nResta (2)\nMultiplicación (3)\nDivisión (4)");
-// operacion = parseInt(operacion)
-// let total = 0;
-// if(operacion === 1) {
-//     total = numero1 + numero2;
-//     console.log(total)
-// } else if(operacion === 2) {
-//     total = numero1 - numero2;
-//     console.log(total)
-// } else if(operacion === 3) {
-//     total = numero1 * numero2;
-//     console.log(total)
-// } else if(operacion === 4 && numero2 !== 0) {
-//     total = numero1 / numero2;
-//     console.log(total)
-// } else {
-//     console.log('Error: El segundo número ingresado fue 0')
+// if (operacion == "suma") {
+//     confirm("el resultado de la suma es: " + suma)
+// } else if (operacion == "resta") {
+//     confirm("el resultado de la resta es: " + resta)
+// } else if(operacion == "multiplicar"){
+//     confirm("el resultado de la multiplicación es: " + multi)
+// }else if (operacion == "dividir"){
+//     confirm("el resultado de la division es: " + dividir)
 // }
 
-
-
-
-
-//NUMERO 13
-// Crear un programa que permita ingresar todos los datos de tu documento nacional de identidad, 
-// mostrar por pantalla un mensaje que imprima todos los datos ingresados y pregunte si están correctos los mismos. 
-// En caso afirmativo, crear un objeto llamado dni con todos los datos ingresados y mostrarlos por consola con console.table() 
-// mas un mensaje de registro exitoso, en caso de que la persona rechace confirmar los datos, 
-// mostrar un mensaje que diga: vuelva a intentarlo en 1 mes.
-
-// let nombreCompleto = prompt("Ingresa el nombre completo");
-// let edad = prompt("Ingresa tu edad");
-// edad = parseInt(edad);
-// let docIdentidad = prompt("Ingresa tu numero de documento");
-// docIdentidad = parseInt(docIdentidad);
-
-// window.alert("Su nombre: " + nombreCompleto 
-//             + "\nSu edad: " + edad
-//             + "\nSu documento de identidad: " + docIdentidad); //Acá muestre estos datos en pantalla, con su window
-// let afirmacion = prompt("Los datos están correctos?, digíte \n(1) Sí\n(2) No")
-// afirmacion = parseInt(afirmacion);
-
-// if(afirmacion === 1) {
-//     console.log("Registro exitoso");
-// } else if (afirmacion === 2) {
-//     console.log("Vuelva a intentarlo en 1 mes");
-// } else {
-//     console.log("El número ingresado no estuvo en las opciones, así que inicie el proceso nuevamente")
+// if (operacion = "dividir" && numero1 == 0 || numero2 ==0) {
+    
+//     confirm("Error")
 // }
+
+// ejercicio 13
+
+let nombre = prompt("ingrese su nombre")
+let apellidos = prompt("ingrese sus apellidos")
+let numeroindentidad = prompt("ingrese su numeroindentidad ")
+let fechaNacimiento = prompt("ingrese su fechaNacimiento")
+let estatura = prompt("ingrese su estatura")
+let RH = prompt("ingrese su RH")
+let fechaExpedicion = prompt("ingrese su fechaExpedicion")
+
+confirm(`BIEVENIDO \n Nombre: ${nombre} \n Apellidos: ${apellidos} \n Id: ${numeroindentidad} \n Fecha de nacimiento: ${fechaNacimiento} \n Estatura: ${estatura} \n RH: ${RH} \n Fecha de expedicion: ${fechaExpedicion} \n ¿DATOS CORRECTOS? `)
+
+if (confirm) {
+
+    let dni = {
+        nombre,
+        apellidos,
+        numeroindentidad,
+        fechaNacimiento,
+        estatura,
+        RH,
+        fechaExpedicion
+    }
+    console.table(dni)
+    
+}
+    alert(`vuelva a intentarlo en 1 mes`)
